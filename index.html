@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scaleble=0, initial-scale=1,  minimum-scale=1,   maximum-scale=1"> 
+    <title>AVISOS OSKAR & DECORSIGN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</head>
+<body  class="hidden" id="hidden">
+     
+        <div class="loader" id="preload">
+            <img src="./images/preload.svg">
+        </div>      
+    <header>
+        <nav>
+            <div><img id="logo" src="./images/logo.png"/>
+            <h2 id="t_nav">AVISOS OSKAR & DECORSIGN</h2></div>
+            <input class="menu" id="menu" type="checkbox">
+            <label for="menu">	
+                &#9776;</label>
+            <a href="#quienes_somos">¿QUIENES SOMOS?</a>
+            <a href="#portafolio">PORTAFOLIO</a>
+            <a href="#trabajos">TRABAJOS</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+    </header>
+    <h1>AVISOS OSKAR & DECORSIGN</h1>
+
+    <a name="quienes_somos"></a>
+    <div class="container_1">
+        <h3 >¿Quienes somos?</h3>
+        <p>Somos una compañia con más de 15 años de experiencia, en el mercado de diseño de avisos y decoracion,<br>
+            para vehiclos y  para compañias, todo en pro de realizar proyectos de diseño a la medida para nuestros<br>
+            clientes, expandiendo nuestro alcance en proyectos empresariales y proyectos personalizados.</p>
+    </div>
+
+    <a name="portafolio"></a>
+    <div class="container_2">
+        <h3 >Portafolio</h3>
+        <ul>
+            <li>
+                <h4>Avisos</h4>
+                <img class="imgavisos" src="./images/aviso.png">
+                <p class="texto">Nos esforzamos por<br>
+                hacer más llamatiba su compañia.</p>
+            </li>
+            <li>
+                <h4>Señales</h4>
+                <img class="imgsenales" src="./images/señales.png">
+                <p class="texto">De lo comun y casual<br>
+                    hasta las mejores indicaciones.</p>
+            </li>
+            <li>
+                <h4>Decoracion</h4>
+                <img class="imgdecoracion" src="./images/decoracion.png">
+                <p class="texto">Lo profesional y lo mejor<br>
+                para personalizar tu vehiculo.</p>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        gsap.to(".imgavisos", {duration: 5, rotationY: 360, repeat: -1});
+        gsap.to(".imgsenales", {duration: 5, rotationY: 360, repeat: -1});
+        gsap.to(".imgdecoracion", {duration: 5, rotationY: 360, repeat: -1});
+    </script>
+    
+    <a name="trabajos"></a>
+    <div class="container_3">
+        <h3 >Nuestros Trabajos</h3>
+        <div class="galeria">
+            
+            <div class="avisos">
+                <h4>Avisos</h4>
+                <div class="container-slider">    
+                    <div class="slider" id="slider">
+                        
+                            <div class="slider__section">
+                                <img src="./images/avisos/aviso_blue.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section">
+                                <img src="./images/avisos/aviso_diesel1.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section">
+                                <img src="./images/avisos/aviso_diesel2.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section">
+                                <img src="./images/avisos/aviso_p.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section">
+                                <img src="./images/avisos/aviso_p1.png" alt="avisos" class="slider__img"></div>
+                                <div class="slider__section">
+                                    <img src="./images/avisos/aviso_zf.jpg" alt="avisos" class="slider__img"></div>
+                           
+                    </div>
+                    <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+                    <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+                </div>    
+            </div>
+
+
+            <div class="senales">
+                <h4>Señales</h4>
+                <div class="container-slider">    
+                    <div class="slider" id="slider2">
+                        <div class="slider__section2">
+                            <img src="./images/avisos/aviso_zf.jpg" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section2">
+                                <img src="./images/avisos/aviso_blue.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section2">
+                                <img src="./images/avisos/aviso_diesel1.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section2">
+                                <img src="./images/avisos/aviso_diesel2.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section2">
+                                <img src="./images/avisos/aviso_p.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section2">
+                                <img src="./images/avisos/aviso_p1.png" alt="avisos" class="slider__img"></div>
+                            
+                           
+                    </div>
+                    <div class="slider__btn slider__btn--right" id="btn-right2">&#62;</div>
+                    <div class="slider__btn slider__btn--left" id="btn-left2">&#60;</div>
+                </div>    
+            </div>
+             
+            <div class="decoracion">
+                <h4>Decoracion</h4>
+                <div class="container-slider">    
+                    <div class="slider" id="slider3">
+                        <div class="slider__section3">
+                            <img src="./images/avisos/aviso_zf.jpg" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section3">
+                                <img src="./images/avisos/aviso_blue.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section3">
+                                <img src="./images/avisos/aviso_diesel1.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section3">
+                                <img src="./images/avisos/aviso_diesel2.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section3">
+                                <img src="./images/avisos/aviso_p.png" alt="avisos" class="slider__img"></div>
+                            <div class="slider__section3">
+                                <img src="./images/avisos/aviso_p1.png" alt="avisos" class="slider__img"></div>
+                            
+                           
+                    </div>
+                    <div class="slider__btn slider__btn--right" id="btn-right3">&#62;</div>
+                    <div class="slider__btn slider__btn--left" id="btn-left3">&#60;</div>
+                </div>    
+            </div>
+
+
+        </div>
+    </div>
+
+    <a name="contacto"></a>
+    <div class="container_4" name="contaco">
+        <h3 >Contacto</h3>
+        <div class=contacto>
+         <img src="./images/correo.png"></img>  
+        <p>Correo:<br>
+            oscaravi@hotmail.com<br>
+            <br>
+            <img src="./images/direccion.png"></img>
+            <br>Direccion:<br>
+            Calle 16j Bis # 111a - 57, Bogotá D.C<br>
+            <br>
+            <img src="./images/telefono.png"></img>
+            <br>Telefono:<br>
+            442 90 66
+        </p>
+       </div>
+       <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d417.9798831646821!2d-74.15247671201922!3d4.679783688420739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9cedc2e37565%3A0xf826f9365a16b104!2sAvisos%20Decors!5e0!3m2!1ses!2sco!4v1630106554061!5m2!1ses!2sco" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2021 AVISOS OSKAR & DECORSIGN by Luis Carlos Pulido Martinez</p>
+    </footer>
+
+    <a href="https://api.whatsapp.com/send?phone=573118329140" target="_blank"><img id="whatsapp"src="images/whatsapp.png" /></a>
+    <script src="preload.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
