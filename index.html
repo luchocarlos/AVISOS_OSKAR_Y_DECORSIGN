@@ -15,15 +15,16 @@
         </div>      
     <header>
         <nav>
-            <div><img id="logo" src="./images/logo.png"/>
+            <div class="logo_t"><img id="logo" src="./images/logo.png"/>
             <h2 id="t_nav">AVISOS OSKAR & DECORSIGN</h2></div>
             <input class="menu" id="menu" type="checkbox">
-            <label for="menu">	
-                &#9776;</label>
-            <a href="#quienes_somos">¿QUIENES SOMOS?</a>
-            <a href="#portafolio">PORTAFOLIO</a>
-            <a href="#trabajos">TRABAJOS</a>
-            <a href="#contacto">CONTACTO</a>
+            <label for="menu">&#9776;</label>
+            <div class="links" id="toggle">
+            <a href="#quienes_somos" id="opcion">¿QUIENES SOMOS?</a>
+            <a href="#portafolio" id="opcion">PORTAFOLIO</a>
+            <a href="#trabajos" id="opcion">TRABAJOS</a>
+            <a href="#contacto" id="opcion">CONTACTO</a>
+            </div>
         </nav>
     </header>
     <h1>AVISOS OSKAR & DECORSIGN</h1>
@@ -179,5 +180,6 @@
     <a href="https://api.whatsapp.com/send?phone=573118329140" target="_blank"><img id="whatsapp"src="images/whatsapp.png" /></a>
     <script src="preload.js"></script>
     <script src="slider.js"></script>
+    <script src="retirar_menu.js"></script>
 </body>
 </html>
