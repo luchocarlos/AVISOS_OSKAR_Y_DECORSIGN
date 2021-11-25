@@ -326,17 +326,10 @@ h3{
 /*mapaaaaaaaaaa*/
 iframe{
     height: 400px;
-    width: 900px;
+    width: 40em;
 }
 
-@media ( width: 1920px) {
-  
-    iframe{
-        height: 400px;
-        width: 1500px;
-    }
 
-}
 
 
 
@@ -393,6 +386,8 @@ footer{
         font-weight: bold;
     }
 
+
+
     #t_nav{
         display: none;
     }
@@ -405,12 +400,11 @@ footer{
     nav{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 17em;
     }
 
-    nav :nth-child(3){
+    nav label{
         margin-top: 10px;
-        float: right;
+        margin-left: 75%;
     }
 
     nav .links{
@@ -680,4 +674,108 @@ footer{
     
 
 
+}
+
+@media (min-width: 769px) and (max-width:1023px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        width: 99%;
+    }
+
+    nav{
+        margin-top: 2px;
+        max-width: 99vh;
+    }
+
+    label{ 
+        display: inline;
+        color: white;
+        height: 30px;
+        width: 5em;
+        max-width: 30px;
+        font-size: 18px;
+        background: rgba(151, 19, 52, 0.911);
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+
+    #t_nav{
+        display: none;
+    }
+
+    #logo{
+        margin-left: 10px;
+        margin-top: 6px;
+    }
+
+    nav{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 85%;
+    }
+
+    nav :nth-child(3){
+        margin-top: 10px;
+        float: right;
+    }
+
+    nav .links{
+        display: grid;
+    }
+
+    nav .links a{
+        color: #fff;
+    }
+    
+    nav .links a:hover{
+        background: #fff;
+        color:rgb(69, 69, 196);
+        height: 4em;
+        padding: 0;
+        margin: 0;
+    }
+
+    .links{
+        z-index: 5;
+        text-align: center;
+        position: absolute;
+        top: 4em;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background:rgb(87, 8, 28);
+        width: 99%;
+        height: auto;
+        
+        transform: translateX(+120%);
+        transition: all 500ms;
+    }
+
+    
+    .show{
+        transform: translateX(0);
+        transition: all 500ms;
+    }
+
+
+
+    /*mapaaaaaaaaaa*/
+    iframe{
+         height: 400px;
+         width: 36em;
+    }
+    
+}
+
+
+@media ( min-width: 1920px) {  
+    iframe{
+        height: 400px;
+        width: 1500px;
+   }
 }
