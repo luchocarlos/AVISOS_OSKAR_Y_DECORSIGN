@@ -4,6 +4,11 @@
     padding: 0.5em;
 }
 
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 body{
     background: #fff;
 }
@@ -177,9 +182,10 @@ h3{
 
 .container_3{
     width: 99%;
-    height: 1200px;
+    height: 4000px;
     box-shadow: 2px 2px 2px 2px silver; 
 }
+
 .container_3 h3{
     text-align: center;
 }
@@ -187,25 +193,11 @@ h3{
 .galeria{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 80px;
-    grid-gap: 80px;
+
 }
 
-.avisos, .senales, .decoracion, .especiales{
-    width: 500px;
-    height: 550px;
-}
 
-.decoracion{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    margin-left: 25%;
-}
 
-.container_3 img{
-   width: 410px;
-   height: 400px;
-}
 
 .avisos h4{
     background:rgb(117, 117, 121);
@@ -217,25 +209,142 @@ h3{
     box-shadow: 2px 2px 2px 2px rgb(79, 99, 190); 
 }
 
-.senales h4{
+.buses h4{
     background:rgb(117, 117, 121);
     letter-spacing: 0.5em;
     height: 40px;
     text-align: center;
     font-size: 25px;
     color: rgb(247, 247, 247);
-    box-shadow: 2px 2px 2px 2px rgb(188, 190, 53); 
+    box-shadow: 2px 2px 2px 2px rgb(236, 88, 30); 
 }
 
-.decoracion h4{
-    margin-top: -80px;
+.caraudio h4{
     background:rgb(117, 117, 121);
     letter-spacing: 0.5em;
     height: 40px;
     text-align: center;
     font-size: 25px;
     color: rgb(247, 247, 247);
-    box-shadow: 2px 2px 2px 2px rgb(190, 119, 53); 
+    box-shadow: 2px 2px 2px 2px rgb(80, 223, 211); 
+}
+
+.empresarial h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(12, 45, 66); 
+}
+
+.hogar h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(38, 192, 102); 
+}
+
+.interior h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(219, 205, 9); 
+}
+
+.lunas h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0); 
+}
+
+.motos h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(109, 2, 2); 
+}
+
+.personalizados h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(79, 190, 98); 
+}
+
+.placas h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(51, 19, 82); 
+}
+
+.reflectivos h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(255, 0, 0); 
+}
+
+.vh_pesados h4{
+    background:rgb(117, 117, 121);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(247, 247, 247);
+    box-shadow: 2px 2px 2px 2px rgb(60, 51, 112); 
+}
+
+.wraper h4{
+    background:rgb(0, 0, 0);
+    letter-spacing: 0.5em;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(255, 0, 0);
+    box-shadow: 2px 2px 2px 2px rgb(247, 63, 63); 
+}
+
+.wraper{
+    margin-left: 50%;
+}
+
+
+.avisos, .buses, .caraudio, .empresarial, .hogar,
+.interior, .lunas, .motos, .personalizados, .placas, 
+.reflectivos, .vh_pesados, .wraper {
+    width: 500px;
+    height: 550px;
+}
+
+
+.container_3 img{
+   width: 410px;
+   height: 400px;
 }
 
 .container-slider{
@@ -355,6 +464,11 @@ footer{
     color: grey;
     clear: both;
 }
+
+
+
+
+
 
 
 /*mediaaaaaaaa*/
@@ -493,28 +607,7 @@ footer{
         padding: 0.2em;     
     }
 
-    /*container 3*/
-    
 
-    .container_3{
-        padding-top: 10px;
-        max-width: 95vh;
-        height: 100em;
-        box-shadow: 2px 2px 2px 2px silver; 
-    }
-    .container_3 h3{
-        text-align: center;
-    }
-
-    .galeria{
-        margin-top: 20px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        padding-left: 8%;
-        grid-gap: 10px;
-        justify-content:center;
-        align-items: center;
-    }
 
     .senales{
         margin-top: 4em;
@@ -528,14 +621,56 @@ footer{
         grid-column-end:2;
         margin-left: 0;
     }
+
+    /*container 3*/
     
 
+    .container_3{
+        padding-top: 10px;
+        max-width: 95vh;
+        height: 250em;
+        box-shadow: 2px 2px 2px 2px silver; 
+    }
+    .container_3 h3{
+        text-align: center;
+    }
 
+    .galeria{
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 8%;
+        grid-gap: 20px;
+        justify-content:center;
+        align-items: center;
+    }
 
-    .avisos, .senales, .decoracion, .especiales{
+    .avisos, .buses, .caraudio, .empresarial, .hogar,
+    .interior, .lunas, .motos, .personalizados, .placas, 
+    .reflectivos, .vh_pesados, .wraper{
+        margin-top: 40px;
         width: 20em;
         height: 15em;
     }
+
+    .vh_pesados h4{
+        background:rgb(117, 117, 121);
+        letter-spacing: 0.4em;
+        height: 40px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(247, 247, 247);
+        box-shadow: 2px 2px 2px 2px rgb(60, 51, 112); 
+    }
+
+    .personalizados h4{
+        font-size: 22px;   
+    }
+
+    .wraper{
+        margin-left: 0;
+    }
+    
 
     .container_3 img{
         margin-top:5px;
@@ -543,16 +678,6 @@ footer{
         height: 15em;
     }
 
-    .avisos h4{
-        padding-top: 10px;
-        background:rgb(117, 117, 121);
-        letter-spacing: 0.5em;
-        height: 30px;
-        text-align: center;
-        font-size: 18px;
-        color: rgb(247, 247, 247);
-        box-shadow: 2px 2px 2px 2px aquamarine; 
-    }
 
     .container-slider{
         max-width: 90%;
@@ -676,7 +801,7 @@ footer{
 
 }
 
-@media (min-width: 769px) and (max-width:1023px){
+@media (min-width: 769px) and (max-width:1022px){
     *{
         margin: 0;
         padding: 0;
@@ -771,6 +896,16 @@ footer{
     }
     
 }
+
+@media (min-width: 1023px){
+    /*mapaaaaaaaaaa*/
+    iframe{
+        height: 400px;
+        width: 55em;
+   }
+
+}
+
 
 
 @media ( min-width: 1920px) {  

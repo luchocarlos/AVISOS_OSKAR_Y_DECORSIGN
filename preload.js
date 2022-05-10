@@ -1,9 +1,14 @@
-window.onload = function(){
+newFunction();
 
-    var preload = document.getElementById('preload');
-    var body = document.getElementById('hidden');
+function newFunction() {
+    window.onload = setTimeout(function () {
 
-    preload.classList.add('remove')
-    body.classList.remove('hidden')
+        var preload = document.getElementById('preload');
+        var body = document.getElementById('hidden');
 
+        preload.classList.add('remove');
+        body.classList.remove('hidden');
+    }
+
+    ); 500;
 }
